@@ -55,10 +55,10 @@ func main() {
 
 	resp, err := http.Get(fileUrl)
 	if err != nil {
-		fmt.Println("No Data Fethed")
+		fmt.Println("No Data Fetched")
 	} else
 	{
-		fmt.Println("Data Fethed")
+		fmt.Println("Data Fetcthed")
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode == http.StatusOK {
@@ -101,7 +101,7 @@ func main() {
 
 
 		}
-		log.Printf("Data inserted into MongoDB")
+		log.Printf("Data inserted into MongoDB (db: mydb, collection:record_data)")
 
 	}
 
