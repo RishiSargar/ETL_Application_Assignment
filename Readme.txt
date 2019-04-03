@@ -13,7 +13,7 @@ IDE used :JetBrains GoLand 2019.1
 Infrastructure Setup :
 1.Go Lang installed on the system.
 2. MongoDB server running on port 27017
-    Create a db "mydb" in it by using command "use mydb"
+    Create a db "mydb" in it by using command "use mydb" in MongoDB CLI
 
 Application has two components each implemented in separate file
 A. Data Load (Data_Load.go)
