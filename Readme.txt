@@ -44,6 +44,11 @@ The data consumes all the columns in the data base :
 	Shape_len  float64
 	The_geom   string
 
+Execution Step :
+1. Make sure Go is installed, switch to the directory where you have Data_Load.go file.
+2. hit "go build Data_Load.go"
+3. hit "go run Data_Load.go <number of rows to be pulled>"
+
 B. ETL API
 1. This components provides an API to access the data stored in the database and get some of the insights of the data.
 2. Once ETL_API.go is executed, application will be launched on localhost on port number 12345
@@ -59,5 +64,11 @@ B. ETL API
 
     All the metrics are returned in the json format e.g {"Metric":"Count","Value":500}
     mux router has been used to implement the different handler for different functions.
+
+Execution Step :
+1. hit "go build ETL_API.go"
+2. Make sure port 12345 is free, hit "go run ETL_API.go"
+3. Visit http://localhost:12345 on your web browser
+4. Click on links to get insights
 
 
